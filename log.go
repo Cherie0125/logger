@@ -29,11 +29,11 @@ func NewLogger(config *LoggerConfig) *Logger {
 
 	// make true log level
 	switch config.LogLevel {
-	case ErrorLevel :
+	case ErrorLevel:
 		level = zap.ErrorLevel
-	case InfoLevel :
+	case InfoLevel:
 		level = zap.InfoLevel
-	case DebugLevel :
+	case DebugLevel:
 		level = zap.ErrorLevel
 	}
 

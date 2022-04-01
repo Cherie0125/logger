@@ -14,20 +14,20 @@ const (
 
 // the configure of writing logs to files
 type FileConfig struct {
-	Filename string // log file's name and path
-	MaxSize int
-	MaxAge int
+	Filename   string // log file's name and path
+	MaxSize    int
+	MaxAge     int
 	MaxBackups int
-	LocalTime bool
-	Compress bool
+	LocalTime  bool
+	Compress   bool
 }
 
 // the configure of log object
 type LoggerConfig struct {
-	LogLevel Level
-	Color bool
-	Console bool
-	File bool
+	LogLevel   Level
+	Color      bool
+	Console    bool
+	File       bool
 	Fileconfig *FileConfig
 }
 
